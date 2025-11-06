@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv
+
+# Data
+data/storage/*.csv
+data/storage/*.parquet
+*.db
+*.sqlite
+
+# Logs
+*.log
+logs/
+
+# Reports
+backtesting/reports/*.html
+backtesting/reports/*.png
+
+# Secrets
+.env
+config_local.yaml
+*_secret.yaml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Temporary
+temp/
+tmp/
+*.tmp
+

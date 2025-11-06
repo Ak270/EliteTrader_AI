@@ -1,0 +1,34 @@
+{
+  "account": {
+    "starting_capital": 100000,
+    "current_value": 100000,
+    "total_profit": 0,
+    "total_return_pct": 0.0,
+    "cash": 100000
+  },
+  "stats": {
+    "total_trades": 0,
+    "winning_trades": 0,
+    "losing_trades": 0,
+    "win_rate": 0
+  },
+  "position": {
+    "active": true,
+    "entry_date": "2025-11-06",
+    "entry_price": 57790.7923024261,
+    "current_price": 57790.7923024261,
+    "days_held": 0
+  },
+  "market": {
+    "symbol": "BANKNIFTY",
+    "current_price": 57790.7923024261,
+    "latest_date": "2025-11-06",
+    "timestamp": "2025-11-06T07:12:44.762953"
+  },
+  "trade_history": [],
+  "equity_curve": [
+    100000
+  ],
+  "daily_pnl": [],
+  "last_update": "2025-11-06T07:12:44.763456"
+}

@@ -1,0 +1,43 @@
+# Core Data & Analysis
+pandas==2.1.3
+numpy==1.26.2
+yfinance==0.2.33
+yahooquery==2.3.7
+requests==2.31.0
+
+# Backtesting
+backtrader==1.9.78.123
+vectorbt==0.26.2
+
+# Technical Indicators (Built-in replacement)
+# We'll implement indicators manually - better control!
+
+# Visualization
+matplotlib==3.8.2
+plotly==5.18.0
+seaborn==0.13.0
+
+# API & Web
+fastapi==0.105.0
+uvicorn==0.25.0
+python-multipart==0.0.6
+
+# Database
+sqlalchemy==2.0.23
+
+# Utilities
+pyyaml==6.0.1
+python-dotenv==1.0.0
+schedule==1.2.0
+pytz==2023.3
+
+# Notifications
+python-telegram-bot==20.7
+
+# Testing
+pytest==7.4.3
+pytest-cov==4.1.0
+
+# Optimization
+optuna==3.5.0
+scikit-learn==1.3.2

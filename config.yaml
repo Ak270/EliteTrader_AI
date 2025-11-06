@@ -1,0 +1,88 @@
+# EliteTrader AI - Configuration
+project:
+  name: "EliteTrader AI"
+  version: "1.0.0"
+  author: "Institutional Trading Desk"
+
+# Trading Parameters
+trading:
+  capital: 100000 # Starting capital (₹1 lakh)
+  max_positions: 3 # Max concurrent positions
+  risk_per_trade: 0.02 # 2% risk per trade
+  max_daily_loss: 0.03 # 3% max daily loss
+  leverage: 2.5 # Max leverage multiplier
+
+# Market Selection
+markets:
+  primary:
+    - "BANKNIFTY" # Bank Nifty Futures/Options
+    - "NIFTY" # Nifty Futures/Options
+  secondary:
+    - "USDINR" # USD/INR Futures
+    - "EURINR" # EUR/INR Futures
+
+# Strategy Allocation (% of capital)
+strategy_allocation:
+  options_selling: 0.40 # 40% - Premium collection
+  breakout_momentum: 0.35 # 35% - Intraday breakouts
+  mean_reversion: 0.25 # 25% - Range trading
+
+# Data Sources
+data:
+  sources:
+    - "yfinance"
+    - "yahooquery"
+    - "nse_official"
+  cache_days: 365
+  update_frequency: "1D" # Daily
+
+# Backtesting
+backtest:
+  start_date: "2020-01-01"
+  end_date: "2025-11-01"
+  commission: 0.0003 # 0.03% per trade
+  slippage: 0.0001 # 0.01% slippage
+
+# Optimization
+optimization:
+  method: "optuna" # Bayesian optimization
+  trials: 500 # Number of parameter combinations
+  metrics:
+    primary: "sharpe_ratio"
+    secondary: ["total_return", "max_drawdown", "win_rate"]
+
+# Risk Management
+risk:
+  stop_loss_pct: 0.02 # 2% stop loss
+  take_profit_pct: 0.04 # 4% take profit (2:1 R:R)
+  trailing_stop: true
+  position_sizing: "kelly_criterion"
+
+# Execution
+execution:
+  mode: "paper" # paper | live
+  broker: "zerodha"
+  order_type: "LIMIT"
+  slippage_buffer: 0.1 # 0.1% price buffer for limits
+
+# Monitoring
+monitoring:
+  dashboard_port: 8000
+  telegram_enabled: false
+  email_enabled: false
+  update_frequency: "5m"
+
+# Alerts
+alerts:
+  trade_entry: true
+  trade_exit: true
+  stop_loss_hit: true
+  daily_summary: true
+  performance_milestone: true
+
+# Tax (India)
+tax:
+  stcg_rate: 0.30 # 30% Short-term capital gains
+  brokerage_per_trade: 20 # ₹20 per trade
+  stt: 0.0001 # 0.01% STT
+
