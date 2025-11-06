@@ -1,0 +1,8 @@
+{
+  "starting_capital": 100000,
+  "current_capital": 100000,
+  "trades": [],
+  "open_positions": [],
+  "total_profit": 0,
+  "last_update": "2025-11-06T00:00:00Z"
+}

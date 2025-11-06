@@ -1,3 +1,11 @@
+# Allow tracking trading state
+!trading_state.json
+!monitoring/dashboard/data/status.json
+
+# But ignore other data
+*.csv
+*.cache
+
 # Python
 __pycache__/
 *.py[cod]
@@ -44,3 +52,6 @@ temp/
 tmp/
 *.tmp
 
+.vercel
+
+.git/
